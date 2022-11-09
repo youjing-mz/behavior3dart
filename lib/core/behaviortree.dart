@@ -32,7 +32,6 @@ class RegisterStructMaps {
 class BehaviorTreeNodeCfg {
   String id;
   String name;
-  String category;
   String title;
   String description;
   List<String> children;
@@ -42,7 +41,6 @@ class BehaviorTreeNodeCfg {
   BehaviorTreeNodeCfg.fromJson(Map<String, dynamic> parseMap)
       : id = parseMap["id"],
         name = parseMap["name"],
-        category = parseMap["category"],
         title = parseMap["title"],
         description = parseMap["description"],
         child = parseMap["child"] ?? "",

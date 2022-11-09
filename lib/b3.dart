@@ -51,7 +51,7 @@ Future<BehaviorTree> loadTreeCfg(
   // 解析 json 字符串，返回的是 Map<String, dynamic> 类型
   final jsonMap = json.decode(content);
 
-  BehaviorTreeCfg treeCfg = BehaviorTreeCfg.fromJson(jsonMap['trees'][0]);
+  BehaviorTreeCfg treeCfg = BehaviorTreeCfg.fromJson(jsonMap);
   BehaviorTree tree = BehaviorTree(treeCfg.id, treeCfg.properties);
   tree.load(treeCfg, register);
   return tree;

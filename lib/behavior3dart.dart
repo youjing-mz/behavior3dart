@@ -9,4 +9,8 @@ export 'core/basenode.dart';
 export 'core/blackboard.dart';
 export 'core/behaviortree.dart';
 export 'core/tick.dart';
+export 'core/composite.dart';
+export 'core/decorator.dart';
+export 'core/action.dart';
+export 'core/condition.dart';
 // TODO: Export any libraries intended for clients of this package.
